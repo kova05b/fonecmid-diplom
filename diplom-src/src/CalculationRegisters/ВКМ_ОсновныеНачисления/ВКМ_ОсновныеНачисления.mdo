@@ -70,6 +70,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <scheduleLink>InformationRegister.ВКМ_ГрафикиРаботы.Dimension.ВКМ_ГрафикРабот</scheduleLink>
   </attributes>
   <attributes uuid="f06d22c8-73cd-4c58-bdf6-06d2c7bac674">
     <name>Параметр</name>
