@@ -54,6 +54,7 @@
   <subsystems>Subsystem.ПокупкиИПродажи</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.ВКМ_ДобавленныеОбъекты</subsystems>
+  <subsystems>Subsystem.ВКМ_ОбслуживаниеКлиентов</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ВладелецФайловШрифт</styleItems>
   <styleItems>StyleItem.ВычисленноеПравоДоступаЦвет</styleItems>
@@ -572,6 +573,7 @@
   <roles>Role.ЧтениеДополнительныхСведений</roles>
   <roles>Role.ЧтениеНСИ</roles>
   <roles>Role.ЧтениеУчетныхЗаписейЭлектроннойПочты</roles>
+  <roles>Role.ВКМ_ДобавлениеИзменениеДокументовОбслуживаниеКлиентов</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияПоСозданиюФаксимильнойПодписиИПечати</commonTemplates>
@@ -815,6 +817,8 @@
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСервер</commonModules>
+  <commonModules>CommonModule.ВКМ_ТелеграмКлиентСервер</commonModules>
+  <commonModules>CommonModule.ВКМ_РасчетЗарплаты</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
@@ -896,6 +900,7 @@
   <scheduledJobs>ScheduledJob.УдалениеУстаревшихПараметровРаботыВерсийРасширений</scheduledJobs>
   <scheduledJobs>ScheduledJob.УстановкаПериодаРассчитанныхИтогов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЭкспортОценкиПроизводительности</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ВКМ_ОтправкаСообщенийВТелеграм</scheduledJobs>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.ИспользоватьВнешнихПользователей</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьГруппыВнешнихПользователей</functionalOptions>
@@ -1039,6 +1044,10 @@
   <constants>Constant.УдалитьНастройкиВходаПользователей</constants>
   <constants>Constant.УчетнаяЗаписьДляВосстановленияПароля</constants>
   <constants>Constant.ХранитьФайлыВТомахНаДиске</constants>
+  <constants>Constant.ВКМ_ТокенТелеграмБота</constants>
+  <constants>Constant.ВКМ_ИдентификаторГруппыОповещения</constants>
+  <constants>Constant.ВКМ_НоменклатураАбонентскаяПлата</constants>
+  <constants>Constant.ВКМ_НоменклатураРаботыСпециалиста</constants>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
   <commonForms>CommonForm.ВводЗначенийСпискомСФлажками</commonForms>
   <commonForms>CommonForm.Вопрос</commonForms>
@@ -1135,11 +1144,20 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
+  <catalogs>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.ВКМ_УведомленияТелеграмБоту</catalogs>
+  <catalogs>Catalog.ВКМ_ГрафикиРабот</catalogs>
+  <catalogs>Catalog.ВКМ_КатегорииСпециалистов</catalogs>
+  <catalogs>Catalog.ВКМ_Сотрудники</catalogs>
+  <catalogs>Catalog.ВКМ_ПоказателиРасчетаЗарплаты</catalogs>
   <documents>Document.ЗаказПокупателя</documents>
   <documents>Document.ОплатаОтПокупателя</documents>
   <documents>Document.ОплатаПоставщику</documents>
   <documents>Document.ПоступлениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.ВКМ_ОбслуживаниеКлиента</documents>
+  <documents>Document.ВКМ_НачислениеЗаработнойПлаты</documents>
+  <documents>Document.ВКМ_Премия</documents>
   <documentJournals>DocumentJournal.Деньги</documentJournals>
   <enums>Enum.ВариантыОчисткиФайлов</enums>
   <enums>Enum.ВариантыПериода</enums>
@@ -1219,6 +1237,7 @@
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.УправлениеИтогамиИАгрегатами</dataProcessors>
+  <dataProcessors>DataProcessor.ВКМ_ЗаполнениеГрафика</dataProcessors>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
@@ -1285,11 +1304,20 @@
   <informationRegisters>InformationRegister.УдалитьХранимыеФайлыВерсий</informationRegisters>
   <informationRegisters>InformationRegister.УдаляемыеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.ФайлыВРабочемКаталоге</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_ГрафикиРаботы</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_СведенияДляРасчетаЗарплаты</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПокупателей</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПоставщикам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Затраты</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОбработкаЗаказов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.ВКМ_ОсновныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_ДополнительныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_Удержания</calculationRegisters>
 </mdclass:Configuration>

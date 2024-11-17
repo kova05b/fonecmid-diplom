@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84ea6f52-fa7a-4e81-97f3-04e182c8f154">
+  <producedTypes>
+    <selectionType typeId="8e2d71a9-b40e-411f-b6c2-8709f2816e93" valueTypeId="0226ade9-5262-4dd4-97f0-bb2eaa118292"/>
+    <listType typeId="020885b3-bdd5-4362-b7e8-cd5c9c94dc81" valueTypeId="174c9044-cbba-4826-a0da-8913f4ac7b28"/>
+    <managerType typeId="2e06de0a-4a7f-4d20-b859-9ede1c7c1f45" valueTypeId="9f5436e1-66ae-4d8a-bfe6-812be8282c80"/>
+    <recordSetType typeId="55f25afe-6671-4c35-964a-023e5b5d2264" valueTypeId="b545b2f4-8abe-4a2a-9147-3ff0fb554987"/>
+    <recordKeyType typeId="fb63bd64-1e69-4458-b8ef-05bae90d3622" valueTypeId="4a69f69c-54ae-4b35-8953-b95473e882e0"/>
+    <recordType typeId="d156ab84-d9de-4127-be1e-fbb6c2a8da31" valueTypeId="275ef03e-fc97-4841-a602-fc5aa1f5d977"/>
+    <recalcsType typeId="2683919e-dfe9-4ac7-8d45-48ea82c3bf76" valueTypeId="a22b4bba-1e22-4955-bd01-bb98711f09b3"/>
+  </producedTypes>
+  <name>ВКМ_ДополнительныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:CalculationRegister>

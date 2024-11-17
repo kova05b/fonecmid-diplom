@@ -128,13 +128,6 @@
       <name>Отбор.Организация</name>
       <field>Document.РеализацияТоваровУслуг.Attribute.Организация</field>
     </choiceParameterLinks>
-    <choiceParameters>
-      <name>Отбор.ВидДоговора</name>
-      <value xsi:type="core:ReferenceValue">
-        <value>Enum.ВидыДоговоровКонтрагентов.EnumValue.Покупатель</value>
-      </value>
-    </choiceParameters>
-    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -410,4 +403,11 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <templates uuid="332a135a-3123-4de9-9e28-5b7347e46644">
+    <name>ПФ_MXL_ПечатьАкта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать акта</value>
+    </synonym>
+  </templates>
 </mdclass:Document>
