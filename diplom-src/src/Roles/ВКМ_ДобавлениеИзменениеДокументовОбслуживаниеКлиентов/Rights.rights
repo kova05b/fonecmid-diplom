@@ -396,6 +396,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.ВКМ_ОбслуживаниеКлиентов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ОбработкаЗаказов.Dimension.Договор</name>
 		<right>
 			<name>View</name>
@@ -2200,6 +2207,21 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.КлючиДоступа.StandardAttribute.PredefinedDataName</name>
 		<right>
 			<name>View</name>
@@ -3447,6 +3469,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_Сотрудники</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -15260,6 +15293,21 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
