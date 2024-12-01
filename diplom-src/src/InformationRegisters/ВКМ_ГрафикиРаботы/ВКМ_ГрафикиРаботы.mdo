@@ -17,27 +17,8 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="fb0628dd-1255-44b0-95e2-de21fcef0ff9">
-    <name>ВКМ_Дни</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дни</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="bbe48768-fcbd-4553-80e4-326d4d187061">
-    <name>ВКМ_Часы</name>
+    <name>ВКМ_Значение</name>
     <synonym>
       <key>ru</key>
       <value>Часы</value>
@@ -45,7 +26,7 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>10</precision>
+        <precision>5</precision>
         <scale>2</scale>
         <nonNegative>true</nonNegative>
       </numberQualifiers>

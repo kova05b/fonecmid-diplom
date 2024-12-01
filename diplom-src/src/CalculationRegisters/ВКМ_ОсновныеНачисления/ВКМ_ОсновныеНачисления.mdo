@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="915901f9-eb24-43e5-bd72-4c3f43b2178e">
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="360c9570-d08d-4f98-85c3-f0574eb8fbd5">
   <producedTypes>
-    <selectionType typeId="371d12e2-38dd-443a-a933-74502248f779" valueTypeId="88ee69ef-9b34-4daa-bc04-f064daed2d00"/>
-    <listType typeId="66acd074-4571-4f8d-9d3a-c150f5e34287" valueTypeId="fa86a7b9-34ea-41f8-b84d-a4f8b79f4191"/>
-    <managerType typeId="222795d5-78ed-428e-aa76-b3ed8f2cdcbe" valueTypeId="671fa046-62d2-4dc5-8def-712339b00a84"/>
-    <recordSetType typeId="a9cb5a1a-78a1-4c14-942b-2a06977f28ee" valueTypeId="2010670c-5996-4bdb-8967-2d01082215a3"/>
-    <recordKeyType typeId="d3046e03-a30b-41c1-b23e-a251a4755693" valueTypeId="d07c9f84-2783-4164-aca3-56c103d43128"/>
-    <recordType typeId="4ab2632f-5b14-4d6e-9daf-a9bbbdac3b9b" valueTypeId="81c3d3f2-7cd5-444d-8f09-a46a9ab79f56"/>
-    <recalcsType typeId="35637068-478e-4237-803e-cd732b0172c6" valueTypeId="1b19c606-0647-4847-b59b-8d028ad8d9c5"/>
+    <selectionType typeId="4b4b0ee7-ad53-4376-9ec2-61be0d1714dc" valueTypeId="0d51d779-8747-494c-9427-9228870b36b5"/>
+    <listType typeId="43d451a5-a074-4f74-aaf6-871dc69afe17" valueTypeId="f73d3e34-3938-4ec0-b651-a600c2fd9627"/>
+    <managerType typeId="72556fb0-b176-4ab8-9b54-23797c734fd2" valueTypeId="b2ade2eb-d789-42a3-a10b-56f0c5ab2b8e"/>
+    <recordSetType typeId="4cb3a944-79c3-4dcf-82c7-1074d5833ee2" valueTypeId="a59e4868-f5d5-4698-8670-228679872cce"/>
+    <recordKeyType typeId="39f8e8f4-4c8a-4c83-9126-a699f271e153" valueTypeId="48920e23-249c-4005-a20a-2d4a42163bd3"/>
+    <recordType typeId="ef4a47ed-3aa6-457e-8b97-2865593b9bb9" valueTypeId="e01bdd8e-32a0-4825-9601-08fdf28ed045"/>
+    <recalcsType typeId="a6cbe568-251f-4768-a2ca-f6c997ecf7bd" valueTypeId="789e3d2f-7e85-4c47-b4a5-a4a3e1469cdd"/>
   </producedTypes>
   <name>ВКМ_ОсновныеНачисления</name>
   <synonym>
@@ -19,12 +19,12 @@
   <actionPeriod>true</actionPeriod>
   <basePeriod>true</basePeriod>
   <schedule>InformationRegister.ВКМ_ГрафикиРаботы</schedule>
-  <scheduleValue>InformationRegister.ВКМ_ГрафикиРаботы.Resource.ВКМ_Часы</scheduleValue>
+  <scheduleValue>InformationRegister.ВКМ_ГрафикиРаботы.Resource.ВКМ_Значение</scheduleValue>
   <scheduleDate>InformationRegister.ВКМ_ГрафикиРаботы.Dimension.ВКМ_Дата</scheduleDate>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="352ae726-705d-44a7-b1d3-0f77599fbd7d">
-    <name>Результат</name>
+  <resources uuid="725e7f14-4da3-4be3-b556-8ba707682d18">
+    <name>ВКМ_Результат</name>
     <synonym>
       <key>ru</key>
       <value>Результат</value>
@@ -32,7 +32,7 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>10</precision>
+        <precision>15</precision>
         <scale>2</scale>
       </numberQualifiers>
     </type>
@@ -40,17 +40,16 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <resources uuid="f5abc02b-5e64-46da-a707-a64fd0b469de">
-    <name>ОтработаноЧасов</name>
+  <resources uuid="65a589c7-50ae-4426-b3fb-89cd961d4c27">
+    <name>ВКМ_ОтработаноДней</name>
     <synonym>
       <key>ru</key>
-      <value>Отработано часов</value>
+      <value>Отработано дней</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
         <precision>10</precision>
-        <scale>2</scale>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
@@ -58,11 +57,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="8929ec45-a197-4db8-b759-f18da6ae257f">
-    <name>График</name>
+  <attributes uuid="a9e3ca5e-4cc5-4f42-b374-a6b1f715b2f3">
+    <name>ВКМ_ГрафикРаботы</name>
     <synonym>
       <key>ru</key>
-      <value>График</value>
+      <value>График работы</value>
     </synonym>
     <type>
       <types>CatalogRef.ВКМ_ГрафикиРабот</types>
@@ -70,47 +69,32 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <scheduleLink>InformationRegister.ВКМ_ГрафикиРаботы.Dimension.ВКМ_ГрафикРабот</scheduleLink>
   </attributes>
-  <attributes uuid="f06d22c8-73cd-4c58-bdf6-06d2c7bac674">
-    <name>Параметр</name>
+  <attributes uuid="ef087ea5-1def-41b2-a4e8-f2a5b908eba1">
+    <name>ВКМ_Показатель</name>
     <synonym>
       <key>ru</key>
-      <value>Параметр</value>
+      <value>Показатель</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
-        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
-  <dimensions uuid="f6ebd5cb-c284-4d6e-baee-bb3c08846cc6">
-    <name>Сотрудник</name>
+  <dimensions uuid="06f351f7-27ae-4686-a7cd-66f5ab46b478">
+    <name>ВКМ_Сотрудник</name>
     <synonym>
       <key>ru</key>
       <value>Сотрудник</value>
     </synonym>
     <type>
       <types>CatalogRef.ВКМ_Сотрудники</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </dimensions>
-  <dimensions uuid="c7ae8e18-4cc6-4c2d-9ce4-db0321629a5a">
-    <name>Категория</name>
-    <synonym>
-      <key>ru</key>
-      <value>Категория</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВКМ_КатегорииСпециалистов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

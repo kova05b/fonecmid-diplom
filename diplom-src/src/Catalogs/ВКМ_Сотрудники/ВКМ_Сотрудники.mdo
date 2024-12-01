@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26cf12c7-5c07-4f33-afb4-380b96e3fb95">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26cf12c7-5c07-4f33-afb4-380b96e3fb95">
   <producedTypes>
     <objectType typeId="a15778e1-80f7-43be-aa12-dfc714f90396" valueTypeId="505ed1d6-685d-4b76-996f-6493609609a8"/>
     <refType typeId="a7bfb0e6-58f7-42ab-90c7-f9112147cc41" valueTypeId="88bd02c1-92ed-4ebe-816f-24c9a2bb2aa5"/>
@@ -30,4 +30,19 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ec69d67d-1b48-45fd-8670-8b229692f41b">
+    <name>ВКМ_КатегорияСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория сотрудника</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_КатегорииСпециалистов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df29ebe6-88da-4f4c-babb-7334c867cd5b">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="566e27d8-bc14-4945-ab08-509c5dc5113c">
   <producedTypes>
-    <objectType typeId="4a6f4aba-9ed8-4ad9-bc61-907b214f6646" valueTypeId="3e4eabf8-459f-4742-b8f9-4df493b246f2"/>
-    <refType typeId="cec383ad-87b9-41cc-bb6d-52b7862fe432" valueTypeId="08987bd0-4c94-4696-abe8-61d18518e5d0"/>
-    <selectionType typeId="87e695e2-0101-49e0-8352-c0ce2254021c" valueTypeId="5bf90bb1-53dd-44ef-be87-0b32bf915015"/>
-    <listType typeId="f2414c8d-58c7-4c9d-9506-c4a0db1044eb" valueTypeId="a22aaaab-9a14-41b7-ba61-b036dbbc0139"/>
-    <managerType typeId="8e0a7006-f3fc-4a1e-8cc1-d3de39e67846" valueTypeId="0c9b1b6a-7e5f-4de4-a3b3-6dff3672b835"/>
-    <displacingCalculationTypesType typeId="2d738c4e-1de2-4cde-aa1c-e95631a5013d" valueTypeId="5b22afe5-b523-4816-ab78-95a91df67ad2"/>
-    <displacingCalculationTypesRowType typeId="0d2c8fd7-612c-4cfe-a96f-6703eab54bd5" valueTypeId="5191546c-8feb-4160-a042-e12fd951e6b5"/>
-    <baseCalculationTypesType typeId="8029df54-997a-4afc-a3dd-b8e9cd24b267" valueTypeId="d18328c0-b907-47c7-87dc-cd3ccb13f765"/>
-    <baseCalculationTypesRowType typeId="36486b39-d85e-422a-b2a0-571325f48eb0" valueTypeId="e9bb31a4-9b43-49e6-9758-1b92bceaf7b8"/>
-    <leadingCalculationTypesType typeId="43f16380-2c56-4668-970b-948ed069816b" valueTypeId="86b5bb46-351a-4699-8f73-a2acfd2ffa9c"/>
-    <leadingCalculationTypesRowType typeId="8a0d736a-3b7a-44d4-8786-c09d6a7dba80" valueTypeId="6c53eeae-04f8-40ec-a3b0-f9b9bd5615a3"/>
+    <objectType typeId="b836f1bd-088a-4389-90e9-7b685ac583c5" valueTypeId="980894fc-b721-48e2-8863-ef5b95e0acdf"/>
+    <refType typeId="abbdc44a-1f41-49b5-a18c-129bbfdc4dbd" valueTypeId="cb0ba038-7421-4d71-b228-0c3b7bb05bb0"/>
+    <selectionType typeId="5caafa9d-8308-4147-96b4-f515f2c1a982" valueTypeId="2ca342b1-71db-471c-8d6f-a4155ccf4901"/>
+    <listType typeId="4aef2978-3111-4c33-a4fe-8641aaceac20" valueTypeId="d2be8a40-261b-478b-9d79-b1afab3b6af9"/>
+    <managerType typeId="6c61fb7a-a314-4428-b3f0-07265cf6ff3a" valueTypeId="068814bc-c2a5-45e3-addd-0a78bdf81b99"/>
+    <displacingCalculationTypesType typeId="b2e0020f-31de-4a5f-8cf4-4dc64eb21d91" valueTypeId="cc1d5c68-5d2b-45eb-8d82-d72fe2941731"/>
+    <displacingCalculationTypesRowType typeId="a0cbe1fa-bce3-4864-99dd-9a1144673edb" valueTypeId="4ce5e17a-1ee0-4cf3-aefe-c03b6bd8be34"/>
+    <baseCalculationTypesType typeId="6f166004-2fb2-482d-9126-60f35ae16999" valueTypeId="d2ffe2f9-cd0c-4f55-8019-254bc9db2b34"/>
+    <baseCalculationTypesRowType typeId="dd291f76-1a2b-4bea-8054-ad90fb890ba3" valueTypeId="13163038-398c-4186-ac61-5e3a452dfaf6"/>
+    <leadingCalculationTypesType typeId="a6129851-aaee-42b8-9f05-7866cb4c4f72" valueTypeId="a3a21713-a755-4397-a8b3-af982ab2334d"/>
+    <leadingCalculationTypesRowType typeId="e0fb81c8-7a2e-411b-b319-d3c697cbf29a" valueTypeId="091ff3d6-a7b9-4055-b36d-9d8d0ec65a74"/>
   </producedTypes>
   <name>ВКМ_ДополнительныеНачисления</name>
   <synonym>
@@ -33,13 +33,14 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
+  <actionPeriodUse>true</actionPeriodUse>
   <predefined>
-    <items id="7cfdf68f-23b9-474b-b82b-425fc6385d53">
+    <items id="9de06ea4-411a-49ec-b84b-461c73e69509">
       <name>Премия</name>
       <description>Премия</description>
       <code xsi:type="core:StringValue">
-        <value>1</value>
+        <value>03</value>
       </code>
     </items>
   </predefined>

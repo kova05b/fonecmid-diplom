@@ -2,12 +2,6 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <commandsVisibility>
     <visibilityFragments>
-      <command>Document.ЗаказПокупателя.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>Document.РеализацияТоваровУслуг.StandardCommand.OpenList</command>
       <visible>
         <common>true</common>
@@ -52,15 +46,11 @@
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
-      <group>NavigationPanelImportant</group>
-      <commands>Document.ЗаказПокупателя.StandardCommand.OpenList</commands>
-      <commands>Document.РеализацияТоваровУслуг.StandardCommand.OpenList</commands>
-    </placementFragments>
-    <placementFragments>
       <group>NavigationPanelOrdinary</group>
       <commands>Document.ПоступлениеТоваровУслуг.StandardCommand.OpenList</commands>
       <commands>Document.ОплатаПоставщику.StandardCommand.OpenList</commands>
       <commands>Document.ОплатаОтПокупателя.StandardCommand.OpenList</commands>
+      <commands>Document.РеализацияТоваровУслуг.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>NavigationPanelSeeAlso</group>
@@ -71,18 +61,18 @@
       <group>ActionsPanelReports</group>
       <commands>CommonCommand.ОсновныеОтчеты</commands>
     </placementFragments>
+    <placementFragments>
+      <group>ActionsPanelCreate</group>
+      <commands>Document.РеализацияТоваровУслуг.StandardCommand.Create</commands>
+    </placementFragments>
   </commandsPlacement>
   <commandsOrder>
-    <orderFragments>
-      <group>NavigationPanelImportant</group>
-      <commands>Document.ЗаказПокупателя.StandardCommand.OpenList</commands>
-      <commands>Document.РеализацияТоваровУслуг.StandardCommand.OpenList</commands>
-    </orderFragments>
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
       <commands>Document.ПоступлениеТоваровУслуг.StandardCommand.OpenList</commands>
       <commands>Document.ОплатаПоставщику.StandardCommand.OpenList</commands>
       <commands>Document.ОплатаОтПокупателя.StandardCommand.OpenList</commands>
+      <commands>Document.РеализацияТоваровУслуг.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelSeeAlso</group>
