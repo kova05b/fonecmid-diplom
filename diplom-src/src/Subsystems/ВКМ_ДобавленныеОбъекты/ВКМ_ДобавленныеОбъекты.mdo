@@ -44,7 +44,6 @@
   <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
   <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
-  <content>InformationRegister.ВКМ_СведенияДляРасчетаЗарплаты</content>
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
 </mdclass:Subsystem>
