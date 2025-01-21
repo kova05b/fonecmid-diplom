@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c4a8612-6270-4575-823e-ad3601fc335d">
+  <producedTypes>
+    <managerType typeId="92d81b0e-cc88-4b18-863b-70a4d0d0a297" valueTypeId="8b5bcc57-fe09-4127-a90e-e221723c557b"/>
+    <valueManagerType typeId="ac26361d-c5e7-416f-8511-5d1b27926ea1" valueTypeId="2d0bd6f6-df9e-4a87-a059-3e7c546ac54e"/>
+    <valueKeyType typeId="067c3b19-1d78-41fb-89a2-e0688714ee37" valueTypeId="2a7ed876-4e14-4d48-b4a9-8a0b494b5c03"/>
+  </producedTypes>
+  <name>ВКМ_МинимальныйОклад</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ минимальный оклад</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>12</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
